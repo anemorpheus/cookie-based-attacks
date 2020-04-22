@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bear fanpage</title>
+		<style>
+			html, body {
+				height: 100%;
+				margin: 0;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+			
+			body {
+				height: 100%;
+				background-color: black;
+				color: white;
+				display: grid;
+				column-gap: 20px;
+				grid-template-columns: 5fr 1fr;
+			}
+			
+			body > div {
+				height: 100%;
+				display: grid;
+				grid-template-rows: min-content 1fr;
+			}
+
+			iframe {
+				height: 100%;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>This is a bear fan page</h1>
+			<img src="https://i0.wp.com/wp-cpr.s3.amazonaws.com/uploads/2019/11/bear2.jpg?fit=5616%2C3744&ssl=1&resize=1032,688" />
+		</div>
+		<div>
+			<h1>Ads</h1>
+			<div>
+				<iframe src="http://localhost:3000/?website=ilovebears.com&adType=bear"></iframe>
+			</div>
+		</div>
+	</body>
+</html>

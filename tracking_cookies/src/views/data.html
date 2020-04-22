@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ad provider data</title>
+	</head>
+	<body>
+        <% for (let user of users) { %>
+            <h1>Token: <b><%= user.token %></b></h1>
+            <table>
+                <thead>
+                    <th>Referer</th>
+                    <th>Ad type</th>
+                    <th>Timestamp</th>
+                </thead>
+                <tbody>
+                    <% for (let referer of user.referers) { %>
+                        <tr>
+                            <td><%= referer.website %></td>
+                            <td><%= referer.adType %></td>
+                            <td><%= referer.timestamp %></td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        <% } %>
+	</body>
+</html>
